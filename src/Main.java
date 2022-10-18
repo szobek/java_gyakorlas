@@ -1,7 +1,7 @@
 public class Main {
     public static void main(String[] args) {
         //System.out.println(distance(2,7,5,3));
-revnumByString("344");
+revnumByInt(242);
 
     }
 
@@ -21,7 +21,13 @@ revnumByString("344");
     }
 
     //2b
-    public static void revnumByInt() {
+    public static void revnumByInt(int num) {
+        int h=num/100;
+        int t = (num-h*100)/10;
+        int e = (num-h*100)-(t*10);
+        System.out.println(e*100+t*10+h);
+        System.out.println((num==e*100+t*10+h)?"Igaz":"Hamis");
+
     }
 
 //3
